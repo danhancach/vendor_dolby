@@ -34,8 +34,8 @@ PRODUCT_COPY_FILES += \
     vendor/dolby/proprietary/vendor/lib64/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrightdolby.so \
     vendor/dolby/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0.so \
     vendor/dolby/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0-impl.so \
-    vendor/dolby/proprietary/system_ext/priv-app/DaxUI/DaxUI.apk:$(TARGET_COPY_OUT_SYSTEM)/app/DaxUI/DaxUI.apk \
-    vendor/dolby/proprietary/system_ext/priv-app/daxService/daxService.apk:$(TARGET_COPY_OUT_SYSTEM)/priv-app/daxService/daxService.apk
 
 PRODUCT_PACKAGES += \
+    DaxUI \
+    daxService \
     vendor.dolby.hardware.dms

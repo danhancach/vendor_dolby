@@ -3,6 +3,30 @@
 soong_namespace {
 }
 
+android_app_import {
+	name: "DaxUI",
+	owner: "sony",
+	apk: "proprietary/system_ext/priv-app/DaxUI/DaxUI.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+	privileged: true,
+}
+
+android_app_import {
+	name: "daxService",
+	owner: "sony",
+	apk: "proprietary/system_ext/priv-app/daxService/daxService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+	privileged: true,
+}
+
 prebuilt_etc_xml {
 	name: "vendor.dolby.hardware.dms",
 	owner: "sony",
